@@ -262,6 +262,7 @@ else:
             # Aplicação do filtro de NCMs do text_area
             if lista_ncm_filtro:
                 df_pais_raw = df_pais_raw[df_pais_raw['coNcm'].isin(lista_ncm_filtro)]
+                df_pais_raw = df_pais_raw.copy()
             
             if df_pais_raw.empty:
                 st.warning("Nenhum dado encontrado para os filtros selecionados.")
