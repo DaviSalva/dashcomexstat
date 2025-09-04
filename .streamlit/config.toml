@@ -1,0 +1,17 @@
+[server]
+maxMessageSize = 500
+folderWatchBlacklist = ["dados"]
+
+[theme]
+# Cor azul escura para elementos principais
+primaryColor="#9b0000ff"
+# Fundo branco
+backgroundColor="#201f1fff"
+# Fundo da barra lateral cinza claro
+secondaryBackgroundColor="#303636ff"
+# Cor do texto padrão
+textColor="#ecececff"
+# Fonte padrão do sistema
+font="sans serif"
+
+
