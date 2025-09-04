@@ -153,7 +153,7 @@ with st.sidebar:
     st.markdown("##### Filtro de Produtos (Opcional)")
     lista_ncm_texto = st.text_area("Cole uma lista de NCMs:", height=150, help="Separe os códigos por vírgula ou quebra de linha.")
 
-    if st.button("Analisar Período", use_container_width=True, type="primary"):
+    if st.button("Analisar Período", width='stretch', type="primary"):
         st.session_state.clear()
         if datetime(ano_inicio, mes_inicio, 1) > datetime(ano_fim, mes_fim, 1):
             st.error("A data de início não pode ser posterior à data de fim.")
